@@ -1,0 +1,52 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: .1em solid;
+  color: #FFF;
+  font-size: 2em;
+  margin: auto 0 1em;
+  max-width: 90%;
+  outline: 0;
+  padding-bottom: .5em;
+  text-align: center;
+  width: 15em;
+}
+
+.color-box {
+  color: inherit;
+  filter: brightness(250%);
+  font-size: 1.5em;
+  text-align: center;
+  width: 10em;
+}
+
+.color-hex {
+  text-transform: uppercase;
+}
+
+.color-hex:empty:not(:focus):before,
+.color-rgb:empty:not(:focus):before {
+  content: attr(data-placeholder);
+}
+
+.footer {
+  color: #FFF;
+  font-size: .75em;
+  margin: auto 0 2em;
+  text-align: center;
+}
+
+.footer a {
+  color: #FFF;
+  text-decoration: none;
+}
